@@ -1,0 +1,97 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(180deg, #4A90E2 0%, #9013FE 100%);
+  color: white;
+}
+
+.weather-app {
+  text-align: center;
+  width: 46%;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  flex: 1;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 90%;
+  max-width: 800px;
+}
+
+.weather-card h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+}
+
+.weather-card .temperature {
+  font-size: 48px;
+}
+
+.weather-card .condition {
+  font-size: 24px;
+}
+
+.weather-card .details {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.weather-card .hourly-forecast, .weather-card .daily-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weather-card .hourly-forecast div, .weather-card .daily-forecast div {
+  text-align: center;
+  flex: 1;
+}
+
+.weather-card .hourly-forecast div p, .weather-card .daily-forecast div p {
+  margin: 5px 0;
+}
